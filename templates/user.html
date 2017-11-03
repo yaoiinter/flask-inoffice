@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Flasky{% endblock %}
+
+
+{% block page_content %}
+	<div class="page-header">
+		{% if name %}
+			<p>你好,{{ name|lower|capitalize|upper }}</p>
+		{% else %}
+			<h2>Hello,Stanger!</h2>
+		{% endif %}
+	</div>
+{% endblock %}
